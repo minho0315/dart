@@ -1,44 +1,28 @@
+// String sayHello({
+//   String name = 'nobody',
+//   int age = 99,
+// }) {
+//   return "hello $name, $age";
+// }
+
+// String sayHello({
+//   required String name,
+//   required int age,
+// }) {
+//   return "hello $name, $age";
+// }
+
+// String sayHello(String name, [int? age = 10]) => "hello $name, $age";
+
+String Up(String? str) => str?.toUpperCase() ?? 'minho';
+
 void main() {
-  // String name = "nice";
-  // bool alive = true;
-  // int age = 12;
-  // double mony = 69.99;
-  // print(name);
+  print(Up("mi"));
+  print(Up(null));
 
-  // var numbers = [
-  //   1,
-  //   2,
-  //   3,
-  //   4,
-  //   if (true) 5,
-  // ];
-
-  // print(numbers);
-
-  // var name = 'minho';
-  // var age = 10;
-  // var greeting = 'Hello everyone, my name is $name and I\'m ${age + 2}';
-  // print(greeting);
-
-  // var oldFriends = ['minho', 'min'];
-  // var newFrineds = [
-  //   'ho',
-  //   'hu',
-  //   for (var friend in oldFriends) "❤ $friend",
-  // ];
-  // print(newFrineds);
-
-  // Map<String, Object> player = {
-  //   'name': 'minho',
-  //   'xp': 1123,
-  // };
-
-  // print(player);
-
-  var numbers = {1, 2, 3, 4};
-  numbers.add(1);
-  numbers.add(1);
-  numbers.add(1);
-  numbers.add(1);
-  print(numbers);
+  String? name;
+  name ??= "minho";
+  name = null;
+  name ??= "minho2";
+  print(name);
 }
